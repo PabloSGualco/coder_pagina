@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentacion Saludable</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <header class="header">
+
+                <div class="nav-1">           
+                    <img src="../img/logo_3.png" alt="logo" class="logo">
+                    <p>Alimentación Saludable</p>
+					
+					<nav class="nav">
+						<ul class="nav-lista">
+							<li><a href="../index.html">Nosotros</a></li>
+							<li><a href="alimento_saludable.html">Alimentos Saludables</a></li>
+							<li><a href="arma_tu_guia.html">Armá tu guía semanal</a></li>
+							<li><a href="importancia.html">Importancia</a></li>
+							<li><a href="contacto.html">Contacto</a></li>
+						</ul>
+					</nav>    
+					
+                </div>
+
+            <!-- Logo + título principal -->
+            <div class="header-brand">
+                <h1>Bienvenidos a Alimentación Saludable</h1>
+                <h2>Creemos en una alimentación real, posible y consciente</h2>
+            </div>
+    </header>
+<main>
+      <section class="contenido">
+    <h2>Formulario de contacto</h2>
+
+    <form action="#" method="post" class="formulario">
+
+      <h3>Datos personales</h3>
+
+      <!-- Género -->
+      <fieldset>
+        <legend>Género</legend>
+
+        <label>
+          <input type="radio" name="genero" value="hombre">
+          Hombre
+        </label>
+
+        <label>
+          <input type="radio" name="genero" value="mujer">
+          Mujer
+        </label>
+
+        <label>
+          <input type="radio" name="genero" value="no_contesta">
+          Prefiero no responder
+        </label>
+      </fieldset>
+
+      <!-- Nombre y apellido -->
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <!-- Edad -->
+      <label for="edad">Edad</label>
+      <input type="number" id="edad" name="edad" min="1" max="120">
+
+      <!-- Estado civil -->
+      <label for="estado_civil">Estado civil</label>
+      <select id="estado_civil" name="estado_civil">
+        <option value="">Seleccionar</option>
+        <option value="soltero">Soltero/a</option>
+        <option value="casado">Casado/a</option>
+        <option value="concubinato">Concubinato</option>
+        <option value="divorciado">Divorciado/a</option>
+      </select>
+
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Objetivo -->
+      <label for="objetivo">¿Cuál es tu objetivo?</label>
+      <select id="objetivo" name="objetivo">
+        <option value="">Seleccionar</option>
+        <option value="bajar_peso">Bajar de peso</option>
+        <option value="mejorar_habitos">Mejorar hábitos</option>
+        <option value="rendimiento">Rendimiento físico</option>
+        <option value="salud">Salud general</option>
+      </select>
+
+      <h3>Dejanos tu consulta</h3>
+
+      <!-- Mensaje -->
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+      <!-- Botón -->
+      <button type="submit">Enviar consulta</button>
+
+    </form>
+  </section>
+</main>
+
+    <!-- Pie de página -->
+  <footer class="footer">
+        <div class="footer-col">
+            <h4>Enlaces rápidos</h4>
+            <ol>
+                <li><a href="../index.html">Nosotros</a></li>
+                <li><a href="./arma_tu_guia.html">Armá tu guía semanal</a></li>
+                <li><a href="./importancia.html">Importancia</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ol>
+        </div>
+
+        <div class="footer-col">
+            <img src="../img/logo_3.png" alt="logo" >
+            <p>© Alimentación Saludable</p>
+        </div>
+
+
+    <div class="footer-col">
+        <h4>Seguinos</h4>
+        <a href="#" class="social">
+            <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="#" class="social">
+            <i class="fa-brands fa-x-twitter"></i> X
+        </a>
+        <a href="#" class="social">
+            <i class="fa-brands fa-youtube"></i> YouTube
+        </a>
+    </div>
+     </footer>
+</body>
+</html>
