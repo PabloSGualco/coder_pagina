@@ -1,0 +1,22 @@
+@use "../base/variables" as v;
+
+.footer {
+  background-color: v.$color-light;
+  padding: 30px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  h4 {
+    color: v.$color-primary;
+  }
+
+  a {
+    text-decoration: none;
+    color: #2f2f2f;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

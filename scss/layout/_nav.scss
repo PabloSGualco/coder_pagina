@@ -1,0 +1,41 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.nav-1 {
+  @include m.flex-center;
+  justify-content: space-between;
+  background-color: v.$color-light;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  p {
+    font-size: 1.9rem;
+    color: v.$color-primary;
+    margin: 0;
+  }
+}
+
+.nav-lista {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+
+  a {
+    text-decoration: none;
+    color: v.$color-primary;
+    transition: 0.2s;
+
+    &:hover {
+      color: v.$color-secondary;
+    }
+  }
+}
+
+@include m.responsive(mobile) {
+  .nav-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+}

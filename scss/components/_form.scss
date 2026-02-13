@@ -1,0 +1,27 @@
+@use "../base/mixins" as m;
+
+.contenido form {
+  margin-top: 40px;
+  background-color: #e8f5e9;
+  padding: 30px;
+  border-radius: 12px;
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  button,
+  input[type="submit"] {
+    @include m.button-style(primary);
+
+    &:hover {
+      background-color: #1b5e20;
+    }
+  }
+}

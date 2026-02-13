@@ -1,0 +1,23 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.header {
+  text-align: center;
+  background: linear-gradient(135deg, #c8e6c9, #e8f5e9);
+
+    h1 {
+        font-size: 2.4rem;
+        color: v.$color-secondary;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        color: v.$color-text;
+    }
+    }
+
+    @include m.responsive(mobile) {
+    .header h1 {
+        font-size: 34px;
+    }
+}

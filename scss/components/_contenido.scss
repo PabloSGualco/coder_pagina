@@ -1,0 +1,32 @@
+@use "../base/variables" as v;
+
+main {
+  padding: 50px 20px;
+  background-color: v.$color-bg;
+}
+
+.contenido {
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: v.$border-radius;
+  box-shadow: v.$shadow-soft;
+
+  p {
+    line-height: 1.7;
+    color: v.$color-text;
+  }
+
+  h2 {
+    color: v.$color-primary;
+  }
+
+  img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 30px auto;
+    border-radius: v.$border-radius;
+  }
+}

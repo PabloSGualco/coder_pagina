@@ -1,0 +1,14 @@
+@use "../base/variables" as v;
+
+.Galleria {
+  display: grid;
+  gap: 10px;
+
+  $columns: 4;
+  grid-template-columns: repeat($columns, 1fr);
+
+  h4 {
+    grid-column: 1 / -1;
+    color: v.$color-primary;
+  }
+}

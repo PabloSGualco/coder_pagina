@@ -1,0 +1,33 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+@mixin button-style($type) {
+  @if $type == primary {
+    background-color: #2e7d32;
+    color: white;
+  } @else if $type == light {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
